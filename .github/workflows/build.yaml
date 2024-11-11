@@ -18,7 +18,7 @@ jobs:
 
       - name: Set Version
         id: version
-        run: echo "VERSION=${GITHUB_SHA::7}" >> $GITHUB_ENV
+        run: echo "VERSION=${GITHUB_SHA}" >> $GITHUB_ENV
 
       - name: build
         env:
